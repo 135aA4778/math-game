@@ -58,7 +58,7 @@ class ResultScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              "You answered $numberUserCorrectQuestions from $numberTotalQuestions questions",
+              "شما پاسخ دادید به $numberUserCorrectQuestions از $numberTotalQuestions سوال",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 20,

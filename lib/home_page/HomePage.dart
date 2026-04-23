@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:question_app/home_page/TextHomePage.dart';
 
+
 class HomePage extends StatelessWidget {
   const HomePage(this.switchScreen, {super.key});
 
@@ -29,7 +30,7 @@ class HomePage extends StatelessWidget {
               ),
             ),
             label: Text(
-              'start free',
+              'شروع بازی',
               style: TextStyle(
                 color: Colors.black,
                 fontSize: 22,
