@@ -1,5 +1,7 @@
 allprojects {
     repositories {
+        maven{ url = uri("https://pub-azs.ir/api/mavens/") }
+         maven{ url = uri("https://mirror-flutter.runflare.com/") }
         maven { url = uri("https://maven.myket.ir") }
          maven { url = uri("https://archive.ito.gov.ir/gradle/maven_central/") }
         google()

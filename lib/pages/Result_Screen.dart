@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:question_app/pages/QuestionsSummary.dart';
 import 'package:question_app/models/QuestionAndAnswerModel.dart';
+import 'package:persian_fonts/persian_fonts.dart';
 
 class ResultScreen extends StatelessWidget {
   const ResultScreen({
@@ -59,12 +60,12 @@ class ResultScreen extends StatelessWidget {
           children: [
             Text(
               "شما پاسخ دادید به $numberUserCorrectQuestions از $numberTotalQuestions سوال",
-              style: TextStyle(
+              style:  PersianFonts.Vazir.copyWith(
                 fontWeight: FontWeight.bold,
                 fontSize: 20,
-                color: Colors.blue,
+                color: Colors.blue,),
               ),
-            ),
+           
             SizedBox(height: 30),
             Questionssummary(
               dataSummary: summaryDataQuiz,
