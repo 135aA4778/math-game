@@ -45,9 +45,9 @@ class ResultScreen extends StatelessWidget {
 
     for (var element in summaryDataQuiz) {
       if (element['correct answer'] == element['user choosed answer']) {
-        checkUserAnswer.add(Colors.blue);
+        checkUserAnswer.add(const Color.fromARGB(255, 46, 125, 50));
       } else {
-        checkUserAnswer.add(const Color.fromARGB(255, 213, 15, 81));
+        checkUserAnswer.add(const Color.fromARGB(255, 198, 40, 40));
       }
     }
 
@@ -76,9 +76,9 @@ class ResultScreen extends StatelessWidget {
             // const Text("List of answers and questions...."),
             TextButton(
               onPressed: restartApp,
-              child: Text(
-                'Restart Quize',
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+              child: Text( 
+                'بازی مجدد',
+                style: PersianFonts.Vazir.copyWith(fontWeight: FontWeight.bold, fontSize: 20),
               ),
             ),
           ],

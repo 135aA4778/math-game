@@ -7,7 +7,7 @@ class TextHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(
-      'به اپلیکیشن ماتریس برای بازی ریاضی خوش آمدید',
+      'به اپلیکیشن ماتریس خوش آمدید',
       style: PersianFonts.Vazir.copyWith(
         color: const Color.fromARGB(255, 32, 31, 31),
         fontSize: 24,

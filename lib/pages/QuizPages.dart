@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:question_app/models/AnswerButtons.dart';
 import 'package:question_app/data/DataQuestionAndAnswer.dart';
+import 'package:persian_fonts/persian_fonts.dart';
 
 class Pages extends StatefulWidget {
   const Pages({super.key, required this.selectedAnswer});
@@ -26,12 +27,12 @@ class _PageTwoState extends State<Pages> {
     final currentDataQuize = questionsAndAnswer[numberOfDataQuize];
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
-          'بازی ریاضی',
-          style: TextStyle(
+        title: Text(
+          'ماتریس بازی ریاضی',
+          style: PersianFonts.Vazir.copyWith(
             fontSize: 22,
             fontWeight: FontWeight.bold,
-            color: Color.fromARGB(255, 17, 41, 255),
+            color: Color.fromARGB(255, 100, 10, 204),
             letterSpacing: 1.2, // فاصله بین حروف
             shadows: [
               Shadow(
@@ -42,6 +43,7 @@ class _PageTwoState extends State<Pages> {
             ],
           ),
         ),
+      
         centerTitle: true,
         actions: const [
           // ThreeDotMenu(enablePause: true), // دکمه سه‌نقطه با قابلیت مکث
